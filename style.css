@@ -1,0 +1,500 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+h1 {
+    font-size: 41px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+p {
+    font-size: 12px;
+    color: #8F8F8F;
+    font-weight: 300;
+}
+header {
+    padding: 30px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.search_wrapper .search_box {
+    width: 680px;
+    height: 44px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    padding: 10px;
+}
+.search_wrapper .search_box .search_dropdown {
+    width: relative;
+    border-right: 1px solid #d9d9d9;
+    color: #ACACAC;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+#default-dropdown-name {
+    margin-right: 20px;
+}
+.search_wrapper .search_box .search_dropdown .default_dropdown {
+    display: flex;
+    color: #D75382;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 5px 20px 5px 7px;
+    font-size: 16px;
+    user-select:none;
+}
+.search_wrapper .search_box .search_dropdown .default_dropdown:hover {
+    color: #e494b0;
+    transition: 0.2s all;
+}
+.search_wrapper .search_box .search_dropdown ul {
+    position: absolute;
+    background: #fff;
+    top: 45px;
+    left: -10px;
+    width: 130px;
+    line-height: 30px;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    user-select:none;
+    z-index: 100;
+}
+.dropdown_options {
+    display: none;
+}
+.dropdown_options.active {
+    display: block;
+}   
+.search_wrapper .search_box .search_dropdown ul li:hover {
+    transition: 0.2s all;
+    color: #D75382;
+}
+.search_wrapper .search_box .search_input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-right: 20px;
+}
+.search_wrapper .search_box .search_input .input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 45px;
+    color: #373737;
+}
+.search_wrapper .search_box .search_input .fa-search {
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    color: #373737;
+    cursor: pointer;
+}
+.search_wrapper .search_box .search_input .fa-search:hover {
+    transition: 0.2s all;
+    color: #d75382;
+}
+::-webkit-input-placeholder {
+    color: #ACACAC;
+}
+.main_nav {
+    display: flex;
+    align-items: center;
+}
+.main_nav h3 {
+    cursor: pointer;
+}
+.main_nav h3:hover {
+    color: #D75382;
+    transition: 0.2s all;
+}
+.main_nav .fa-bars {
+    font-size: 22px;
+    color: #D75382;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.main_nav .fa-bars:hover {
+    color: #e494b0;
+    transition: 0.2s all;
+}
+
+/* ---------------nav-links------------- */
+
+.nav_links {
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #929292;
+    margin-bottom: 5px;
+}
+.nav_links .nav_active {
+    color: #d75382;
+    font-weight: 500;
+}
+.nav_line {
+    position: absolute;
+    width: 100%;
+    background-color: #d9d9d9;
+    height: 1px;
+}
+.nav_links ul {
+    display: flex;
+    justify-content: center;
+}
+.nav_links ul li {
+    cursor: pointer;
+    margin: 10px 15px;
+}
+.nav_links ul li:hover {
+    color: #d75382;
+}
+
+
+/* -----------------main-content------------------ */
+
+.main_content_hero {
+    position: relative;
+    width: 100%;
+    min-height: 446px;
+    background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.55)), url("C:/Users/Gunwoo/Documents/GitHub/nexttravel/imgs/Hero-img-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main_content {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    user-select: none;
+}
+.main_content h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.main_search_wrapper .main_search_box {
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    padding: 15px 25px;
+    align-items: center;
+}
+.main_search_wrapper .main_search_box .fa-search {
+    font-size: 22px;
+    margin-right: 20px;
+    color: #d9d9d9;
+}
+.main_search_wrapper .main_search_box .input {
+    outline: 0;
+    border: 0;
+    width: 80%;
+    font-size: 16px;
+}
+.main_search_wrapper .main_search_box .main_search_input {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin-right: 20px;
+    border-right: 1px solid #d9d9d9;
+}
+.main_search_dates {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px solid #d9d9d9;
+    padding-right: 20px;
+    align-items: center;
+}
+.main_search_dates .dash {
+    width: 20px;
+    height: 1px;
+    background-color: #373737;
+}
+.main_search_dates h3 {
+    font-size: 14px;
+    color: #373737;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.main_search_guests h3 {
+    font-size: 14px;    
+}
+.main_search_dates h3:hover {
+    color: #919191;
+    transition: 0.2s all;
+}
+.main_search_guests {
+    color: #373737;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #d9d9d9;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main_search_guests:hover {
+    color: #919191;
+    transition: 0.2s all;
+}
+.main_button {
+    margin-left: 40px;
+    border: none;
+    font-size: 18px;
+    color: #d75382;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+}
+.main_button:hover {
+    color: #e494b0;
+    transition: 0.2s all; 
+}
+
+/* -----------------------------------TOP_HOTELS_CONTENT------------- */
+
+
+.top_hotels_content {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+.top_hotels_content_viewall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.top_hotels_content_viewall p {
+    font-size: 14px;
+    color: #D75382;
+    font-weight: 500;
+    cursor: pointer;
+}
+.top_hotels_content_viewall p:hover {
+    color: #e494b0;
+    transition: 0.2s all;
+}
+.top_hotels_content h2 {
+    margin-bottom: 20px;
+}
+.top_hotels_boxes {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+}
+.top_hotel_img {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 220px;
+    cursor: pointer;
+    position: relative;
+}
+.top_hotel_location {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    width: fit-content;
+    padding: 0px 10px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    user-select: none;
+}
+.top_hotel_info {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    align-items: center;
+    margin-top: -5px;
+}
+.top_hotel_info h1 {
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+.top_hotel_info_detail h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.top_hotel_info_detail.top-4 h4 {
+    font-size: 12px;
+}
+.top_hotel_info_detail_review {
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top_hotel_info_detail_review p {
+    margin-left: 10px;
+}
+.fa-star {
+    color: #EEB545;
+    font-size: 12px;
+    margin-right: 3px;
+}
+.fa-star-half {
+    color: #EEB545;
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.img-1 {
+    background-image: url("C:/Users/Gunwoo/Documents/GitHub/nexttravel/imgs/top_hotel_1.png");
+}
+.img-2 {
+    background-image: url("C:/Users/Gunwoo/Documents/GitHub/nexttravel/imgs/top_hotel_2.png");
+}
+.img-3 {
+    background-image: url("C:/Users/Gunwoo/Documents/GitHub/nexttravel/imgs/top_hotel_3.png");
+}
+.img-4 {
+    background-image: url("C:/Users/Gunwoo/Documents/GitHub/nexttravel/imgs/top_hotel_4.png");
+}
+
+/* -------------------------FOOTER--------------------- */
+
+.footer {
+    padding: 15px 300px;
+    margin-top: 70px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #373737;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.footer_column_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_column_1 p {
+    color: #F4EEE1;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer_column_1 .language {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+    line-height: 16px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #f4eee1;
+    cursor: pointer;
+}
+
+.fa-globe {
+    color: #D75382;
+    font-size: 14px;
+}
+.footer_column_1 .language h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #f4eee1;
+}
+.fa-caret-up {
+    position: relative;
+    top: 2px;
+    color: #f4eee1;
+    font-size: 14px;
+}
+.footer_column_2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_column_2 ul li {
+    margin-bottom: 15px;
+}
+.footer_column_2 ul li a {
+    color: #f4eee1;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer_column_2 ul li a:hover {
+    text-decoration: underline;
+}
+.footer_column_2 div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+}
+.footer_column_2 div:last-child p {
+    font-weight: 300;
+    font-size: 12px;
+}
+.fa-copyright {
+    font-size: 14px;
+    color: #d75382;
+    margin-right: 10px;
+}
+.footer_column_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_column_3 div:first-child h4:first-child {
+    margin-bottom: 15px;
+}
+.footer_column_3 h4 {
+    color: #f4eee1;
+    font-size: 14px;
+}
+.footer_column_3 hr {
+    width: 40%;
+    border: none;
+    background-color: #f4eee1;
+    height: 1px;
+}
+.footer_column_3 div:last-child {
+    display: flex;
+    align-items: center;
+}
+.fab {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #d75382;
+    cursor: pointer;
+}
+.fab:hover {
+    color: #e494b0;
+    transition: 0.2s all;
+}
